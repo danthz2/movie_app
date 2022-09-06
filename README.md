@@ -27,7 +27,9 @@ http: ^0.13.5
 
 <img src="https://take-me-to.space/xGCYRnx.png" width="150"><img src="https://take-me-to.space/yhemmGq.png" width="150"><img src="https://take-me-to.space/kTpALx4.png" width="150">
 
-![](https://www.canva.com/design/DAFDZPqEYCU/view)
+
+<img src="https://www.canva.com/design/DAFDZPqEYCU/view" width="150">
+![](https://www.canva.com/design/DAFDZPqEYCU/)
 
 
 ## Design UI By Francisco Santos
