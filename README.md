@@ -2,7 +2,6 @@
 Hello, nice to meet you, thank you for visiting :)
 I'm trying to rebuild the app using getx
 
-![](https://take-me-to.space/4MpaGvR.png)
 ![Add a heading](https://user-images.githubusercontent.com/67012680/188757848-79f8e4a1-f6da-4f91-8e86-05ead84438b8.png)
 
 
