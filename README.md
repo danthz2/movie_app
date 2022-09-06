@@ -13,7 +13,7 @@ I'm trying to rebuild the app using getx
 - Detail Movie 
 
 ## Dependencies
-'''
+```
 - cached_network_image: ^3.2.1
 - cupertino_icons: ^1.0.2
 - fancy_shimmer_image: ^2.0.2
@@ -22,7 +22,7 @@ I'm trying to rebuild the app using getx
 - get: 4.6.5
 - google_fonts: ^3.0.1
 - http: ^0.13.5
-'''
+```
 ## Screenshoot
 
 <img src="https://take-me-to.space/xGCYRnx.png" width="150"><img src="https://take-me-to.space/yhemmGq.png" width="150"><img src="https://take-me-to.space/kTpALx4.png" width="150">
