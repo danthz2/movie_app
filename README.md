@@ -25,12 +25,7 @@ http: ^0.13.5
 ```
 ## Screenshoot
 
-<img src="https://take-me-to.space/xGCYRnx.png" width="150"><img src="https://take-me-to.space/yhemmGq.png" width="150"><img src="https://take-me-to.space/kTpALx4.png" width="150">
-
-
-<img src="https://www.canva.com/design/DAFDZPqEYCU" width="150">
-![](https://www.canva.com/design/DAFDZPqEYCU/)
-
+<img src="https://take-me-to.space/4MpaGvR.png" width="150">
 
 ## Design UI By Francisco Santos
 [Figma](https://www.figma.com/community/file/1124835379376527920)
