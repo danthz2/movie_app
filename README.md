@@ -30,4 +30,4 @@ http: ^0.13.5
 
 
 ## Design UI By Francisco Santos
-[figma](https://www.figma.com/community/file/1124835379376527920)
+[<i class="fa-brands fa-figma"></i>](https://www.figma.com/community/file/1124835379376527920)
