@@ -1,18 +1,18 @@
 # Movie App
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-![Lab: Write your first Flutter app](https://take-me-to.space/7f5Uj3e.png)
 <img src="https://take-me-to.space/7f5Uj3e.png" width="150">
+Hello, nice to meet you :), thank you for visiting :)
 
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Popular Movie
+- Now Playing Movie
+- Upcoming Movie
+- Search Movie
+- Watch List
+- Detail Movie 
+
+(https://take-me-to.space/xGCYRnx.png)
+
+(https://take-me-to.space/yhemmGq.png)
+
+(https://take-me-to.space/kTpALx4.png)
