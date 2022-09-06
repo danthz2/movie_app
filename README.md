@@ -14,14 +14,14 @@ I'm trying to rebuild the app using getx
 
 ## Dependencies
 ```
-- cached_network_image: ^3.2.1
-- cupertino_icons: ^1.0.2
-- fancy_shimmer_image: ^2.0.2
-- flutter_screenutil: ^5.5.4
-- flutter_svg: ^1.1.4
-- get: 4.6.5
-- google_fonts: ^3.0.1
-- http: ^0.13.5
+cached_network_image: ^3.2.1
+cupertino_icons: ^1.0.2
+fancy_shimmer_image: ^2.0.2
+flutter_screenutil: ^5.5.4
+flutter_svg: ^1.1.4
+get: 4.6.5
+google_fonts: ^3.0.1
+http: ^0.13.5
 ```
 ## Screenshoot
 
