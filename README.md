@@ -30,5 +30,5 @@ http: ^0.13.5
 
 
 ## Design UI By Francisco Santos
-[(https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/figma.svg)](https://www.figma.com/community/file/1124835379376527920)
+![(https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/figma.svg)](https://www.figma.com/community/file/1124835379376527920)
 
