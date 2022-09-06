@@ -11,6 +11,6 @@ Hello, nice to meet you :), thank you for visiting :)
 - Watch List
 - Detail Movie 
 
-![](https://take-me-to.space/xGCYRnx.png =150)
+![](https://take-me-to.space/xGCYRnx.png =150x)
 ![](https://take-me-to.space/yhemmGq.png)
 ![](https://take-me-to.space/kTpALx4.png)
