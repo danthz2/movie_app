@@ -1,7 +1,9 @@
 # Movie App
-<img src="https://take-me-to.space/7f5Uj3e.png" width="150">
 Hello, nice to meet you, thank you for visiting :)
 I'm trying to rebuild the app using getx
+
+![](https://take-me-to.space/4MpaGvR.png)
+
 
 ## Features
 
@@ -23,9 +25,6 @@ get: 4.6.5
 google_fonts: ^3.0.1
 http: ^0.13.5
 ```
-## Screenshoot
-
-![](https://take-me-to.space/4MpaGvR.png)
 
 ## Design UI By Francisco Santos
 [Figma](https://www.figma.com/community/file/1124835379376527920)
