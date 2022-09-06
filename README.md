@@ -25,7 +25,7 @@ http: ^0.13.5
 ```
 ## Screenshoot
 
-<img src="https://take-me-to.space/4MpaGvR.png" width="150">
+![](https://take-me-to.space/4MpaGvR.png)
 
 ## Design UI By Francisco Santos
 [Figma](https://www.figma.com/community/file/1124835379376527920)
