@@ -4,8 +4,10 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:movie/app/controllers/page_index_controller.dart';
 import 'package:movie/app/data/api/tmdb_service.dart';
 import 'package:movie/app/data/models/movie_model.dart';
+import 'package:movie/app/modules/home/controllers/home_controller.dart';
 import 'package:movie/app/routes/app_pages.dart';
 
 class MovieTop extends StatelessWidget {
@@ -20,10 +22,13 @@ class MovieTop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Get.toNamed(
-        Routes.DETAIL_MOVIE,
-        arguments: data,
-      ),
+      onTap: () async {
+        var detail = await Get.find<HomeController>().detailMovie(data!.id.toString());
+        Get.toNamed(
+          Routes.DETAIL_MOVIE,
+          arguments: detail,
+        );
+      },
       child: Stack(
         children: [
           Container(

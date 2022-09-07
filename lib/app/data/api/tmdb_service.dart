@@ -10,7 +10,7 @@ import 'package:movie/app/data/models/review_model.dart';
 class TMDBService {
   String apiKey = '4f5d9fbafe6ccc6b2bfd27aa8de5e5da';
   static String url(String url) {
-    return 'https://image.tmdb.org/t/p/original/$url';
+    return 'https://image.tmdb.org/t/p/w500/$url';
   }
 
   Future<List<MovieModel>> getListMovie(String type) async {
@@ -28,7 +28,7 @@ class TMDBService {
     return [];
   }
 
-  Future<List<MovieModel?>> getSearch(String query) async {
+  Future<List<MovieModel>> getSearch(String query) async {
     var url = Uri.parse(
         'https://api.themoviedb.org/3/search/movie?api_key=$apiKey&query=$query&language=en-US&page=1&include_adult=false');
     try {

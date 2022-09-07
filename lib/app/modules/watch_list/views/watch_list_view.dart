@@ -25,10 +25,38 @@ class WatchListView extends GetView<WatchListController> {
       body: FutureBuilder<List<String>>(
           future: controller.getWatchList(),
           builder: (context, snapshot) {
+            print('data watchlist ${snapshot.data}');
             var dataSnapshot = snapshot.data;
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(
                 child: CircularProgressIndicator(),
+              );
+            }
+            if (snapshot.data!.isEmpty) {
+              return Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(watchlistBoxIcon),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Center(
+                    child: Text(
+                      'There Is No Movie Yet!',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Center(
+                    child: Text(
+                      'Find your movie by Type title,\ncategories, years, etc',
+                      style: Theme.of(context).textTheme.labelSmall,
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
               );
             }
             return ListView.builder(

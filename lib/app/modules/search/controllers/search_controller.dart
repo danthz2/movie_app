@@ -9,9 +9,9 @@ import '../../../data/models/movie_model.dart';
 class SearchController extends GetxController {
   TextEditingController query = TextEditingController();
 
-  Future<List<MovieModel?>> getSearch(String query) async {
+  Future<List<MovieModel>> getSearch(String query) async {
     var dataSearch = await TMDBService().getSearch(query);
-    dataSearch.map((e) => Get.find<PageIndexController>().listSearch.add(e!)).toList();
+    dataSearch.map((e) => Get.find<PageIndexController>().listSearch.add(e)).toList();
     print('data list search : ${Get.find<PageIndexController>().listSearch}');
     update();
     return dataSearch;

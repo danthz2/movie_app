@@ -19,7 +19,7 @@ class DetailMovieView extends GetView<DetailMovieController> {
   @override
   Widget build(BuildContext context) {
     // var cPage = Get.find<PageIndexController>();
-    MovieModel data = Get.arguments;
+    DetailMovieModel data = Get.arguments;
 
     return Scaffold(
       appBar: AppBar(

@@ -61,10 +61,8 @@ class SearchView extends GetView<SearchController> {
                 splashColor: Colors.red,
                 splashRadius: 1,
                 onPressed: () async {
-                  print('jalan');
-                  List<MovieModel?> search = await controller.getSearch(controller.query.text);
-                  print('jalan2');
-                  print(search);
+                  cPage.listSearch.clear();
+                  await controller.getSearch(controller.query.text);
                 },
               ),
               border: OutlineInputBorder(
@@ -77,13 +75,37 @@ class SearchView extends GetView<SearchController> {
             height: 24.h,
           ),
           GetBuilder<SearchController>(
-            builder: (c) {
+            builder: (cSearch) {
               print('list search di builder ${cPage.listSearch}');
               if (cPage.listSearch.isEmpty) {
                 if (data.isEmpty) {
-                  return Text(
-                    'No Data Found',
-                    style: Theme.of(context).textTheme.titleMedium,
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 20.h,
+                      ),
+                      SvgPicture.asset(searchBoxIcon),
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Center(
+                        child: Text(
+                          'We are sorry, we cannot find the movie 😦',
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Center(
+                        child: Text(
+                          'Find your movie by Type title,\ncategories, years, etc ',
+                          style: Theme.of(context).textTheme.labelSmall,
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   );
                 } else {
                   return ListView.builder(
@@ -92,7 +114,7 @@ class SearchView extends GetView<SearchController> {
                     itemCount: data.length,
                     itemBuilder: (context, index) {
                       return FutureBuilder<DetailMovieModel>(
-                        future: c.detailMovie((data[index]?.id).toString()),
+                        future: cSearch.detailMovie((data[index]?.id).toString()),
                         builder: (context, snapshot) {
                           print('data snapshot $snapshot');
                           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -114,7 +136,7 @@ class SearchView extends GetView<SearchController> {
                   itemCount: cPage.listSearch.length,
                   itemBuilder: (context, index) {
                     return FutureBuilder<DetailMovieModel>(
-                      future: c.detailMovie((cPage.listSearch[index].id).toString()),
+                      future: cSearch.detailMovie((cPage.listSearch[index].id).toString()),
                       builder: (context, snapshot) {
                         print('data snapshot $snapshot');
                         if (snapshot.connectionState == ConnectionState.waiting) {

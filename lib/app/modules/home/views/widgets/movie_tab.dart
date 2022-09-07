@@ -7,6 +7,8 @@ import 'package:movie/app/data/api/tmdb_service.dart';
 import 'package:movie/app/data/models/movie_model.dart';
 import 'package:movie/app/routes/app_pages.dart';
 
+import '../../controllers/home_controller.dart';
+
 class MovieTab extends StatelessWidget {
   Future<List<MovieModel>> future;
   MovieTab({
@@ -34,7 +36,13 @@ class MovieTab extends StatelessWidget {
                 crossAxisCount: 3, childAspectRatio: 3 / 4.6, mainAxisSpacing: 16, crossAxisSpacing: 16),
             itemBuilder: (context, index) {
               return GestureDetector(
-                onTap: () => Get.toNamed(Routes.DETAIL_MOVIE, arguments: dataSnapshot[index]),
+                onTap: () async {
+                  var detail = await Get.find<HomeController>().detailMovie(dataSnapshot[index].id.toString());
+                  Get.toNamed(
+                    Routes.DETAIL_MOVIE,
+                    arguments: detail,
+                  );
+                },
                 child: FancyShimmerImage(
                   imageUrl: TMDBService.url(dataSnapshot[index].posterPath ?? ''),
                   shimmerDuration: Duration(milliseconds: 800),

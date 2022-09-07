@@ -7,3 +7,5 @@ const dateIcon = 'assets/icon/date.svg';
 const infoIcon = 'assets/icon/info.svg';
 const starIcon = 'assets/icon/star.svg';
 const ticketIcon = 'assets/icon/ticket.svg';
+const watchlistBoxIcon = 'assets/icon/watchlist_box.svg';
+const searchBoxIcon = 'assets/icon/search_box.svg';
