@@ -11,6 +11,7 @@ abstract class Routes {
   static const WATCH_LIST = _Paths.WATCH_LIST;
   static const SAMPLE = _Paths.SAMPLE;
   static const DETAIL_MOVIE = _Paths.DETAIL_MOVIE;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const WATCH_LIST = '/watch-list';
   static const SAMPLE = '/sample';
   static const DETAIL_MOVIE = '/detail-movie';
+  static const PROFILE = '/profile';
 }

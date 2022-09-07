@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:movie/app/controllers/page_index_controller.dart';
 import 'package:movie/app/data/models/movie_model.dart';
+import 'package:movie/app/routes/app_pages.dart';
 import 'package:movie/app/services/assets.dart';
 import 'package:movie/app/modules/home/views/widgets/movie_top.dart';
 
@@ -29,11 +30,21 @@ class HomeView extends GetView<HomeController> {
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
+              actions: [
+                IconButton(
+                  icon: Icon(Icons.person),
+                  onPressed: () => Get.toNamed(Routes.PROFILE),
+                ),
+              ],
             ),
             SliverToBoxAdapter(
               child: Padding(
                 padding: EdgeInsets.all(16.sp),
                 child: TextField(
+                  onSubmitted: (value) async {
+                    List<MovieModel?> data = await controller.getSearch(value);
+                    Get.find<PageIndexController>().pageController(1, arguments: data);
+                  },
                   controller: controller.query,
                   cursorColor: Theme.of(context).colorScheme.secondary,
                   decoration: InputDecoration(

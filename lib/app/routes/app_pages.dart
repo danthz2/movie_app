@@ -4,6 +4,8 @@ import 'package:movie/app/modules/detail_movie/bindings/detail_movie_binding.dar
 import 'package:movie/app/modules/detail_movie/views/detail_movie_view.dart';
 import 'package:movie/app/modules/home/bindings/home_binding.dart';
 import 'package:movie/app/modules/home/views/home_view.dart';
+import 'package:movie/app/modules/profile/bindings/profile_binding.dart';
+import 'package:movie/app/modules/profile/views/profile_view.dart';
 import 'package:movie/app/modules/search/bindings/search_binding.dart';
 import 'package:movie/app/modules/search/views/search_view.dart';
 import 'package:movie/app/modules/watch_list/bindings/watch_list_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.DETAIL_MOVIE,
       page: () => DetailMovieView(),
       binding: DetailMovieBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => ProfileView(),
+      binding: ProfileBinding(),
     ),
   ];
 }
