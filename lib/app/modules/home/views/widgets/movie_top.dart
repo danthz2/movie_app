@@ -59,13 +59,13 @@ class MovieTop extends StatelessWidget {
                       ..color = Colors.blue,
                   ),
                 ),
-                // Text(
-                //   '$index',
-                //   style: TextStyle(
-                //     fontSize: 100.sp,
-                //     color: Theme.of(context).colorScheme.primary,
-                //   ),
-                // ),
+                Text(
+                  '$index',
+                  style: TextStyle(
+                    fontSize: 100.sp,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                ),
               ],
             ),
           ),
